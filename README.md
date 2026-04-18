@@ -55,18 +55,6 @@ Esses cálculos permitem transformar dados de entrada em informações estratég
 
 ---
 
-## 📁 Estrutura do Projeto
-
-```
-app/
- ├── java/com/marcos/meuapp/
- │    └── MainActivity.java
- ├── res/layout/
- │    └── activity_main.xml
-```
-
----
-
 ## 📈 Visualização de Dados
 
 O sistema utiliza gráficos para facilitar a interpretação dos resultados, permitindo uma análise rápida e intuitiva da produção entre diferentes cenários.
