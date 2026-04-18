@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simulador de Produção"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- DADOS GERAIS -->
+        <EditText
+            android:id="@+id/edtQuantidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantidade de peças"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/edtHorasDia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Horas por dia"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/edtCustoHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Custo por hora"
+            android:inputType="numberDecimal"/>
+
+        <!-- MÁQUINA 1 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Linha 1"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/edtTempoM1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tempo por peça (min)"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/edtEfM1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Eficiência (%)"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/edtQtdM1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantidade de operadores"
+            android:inputType="number"/>
+
+        <!-- MÁQUINA 2 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Linha 2"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/edtTempoM2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tempo por peça (min)"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/edtEfM2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Eficiência (%)"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/edtQtdM2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantidade de operadores"
+            android:inputType="number"/>
+
+        <!-- BOTÃO -->
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:layout_marginTop="20dp"/>
+
+        <!-- RESULTADO -->
+        <TextView
+            android:id="@+id/txtResultado"23
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado"
+            android:layout_marginTop="20dp"/>
+
+        <!-- GRÁFICO -->
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>
